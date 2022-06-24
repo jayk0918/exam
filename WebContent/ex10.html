@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript</h1>
+<h2>function</h2>
+</body>
+<script type = 'text/javascript'>
+	// 함수우선순위
+	var test = function(){	// 해석 2순위 (1순위를 덮어버림)
+		console.log("testA")
+	}
+	
+	function test(){		// 해석 1순위 (선언적 함수)
+		console.log("testB")
+	}
+	
+	test();	// 실행
+	
+</script>
+
+
+
+
+
+
+</html>

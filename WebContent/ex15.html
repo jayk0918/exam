@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript</h1>
+<h2>객체</h2>
+</body>
+<script type = 'text/javascript'>
+
+var array = [];
+var guestBookVo = {
+	name: '심영',
+	password: '1234',
+	content: '내가 고자라니',
+	showInfo: function(){
+		console.log(this.name + ', ' + this.password + ', ' + this.content);
+		// name, password, content를 this.로 정의해주지 않으면 guestBookVo의 밖에서 내부에서 정의한 값들이 적용되지 않음
+	}
+};
+
+guestBookVo.showInfo();
+
+</script>
+
+<script type = 'text/javascript'>
+var personVo = {
+	name: '김두한',
+	hp: '010-8747-9917',
+	company: '02-760-4077'
+}
+
+console.log(personVo);
+
+</script>
+
+<script type = 'text/javascript'>
+var personVo2 = {
+	name: '조병옥',
+	hp: '010-2287-9987',
+	company: '02-760-5641'
+}
+
+personVo2.age = 58;	// 자연스럽게 추가됨, 의도하지 않은 코드라면 주의 요망
+
+console.log(personVo2);
+
+</script>
+
+<script type = 'text/javascript'>
+var personVo3 = {}
+
+personVo3.name = '런승만';
+personVo3.hp = '010-3747-9282';
+personVo3.company = '064-299-9917';
+
+console.log(personVo3);
+
+</script>
+
+
+
+
+
+
+</html>

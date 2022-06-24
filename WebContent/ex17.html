@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript</h1>
+<h2>이벤트(~할 때)</h2>
+
+<div>
+	<button id = 'btn' type='button'>테스트 버튼</button>
+	<h3 id = 'display'>출력영역</h3>
+</div>
+</body>
+<script type = 'text/javascript'>
+window.onload = function(){
+	
+	var testButton = document.getElementById('btn');
+	var testArea = document.getElementById('display');
+	
+	testButton.onclick = function(){
+		console.log('클릭');
+		testArea.innerHTML = "<font color='red'>뒤를 보시오<font>";
+	};
+	
+};
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>

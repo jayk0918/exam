@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript</h1>
+<h2>변수의 범위(전역, 지역변수)</h2>
+</body>
+<script type = 'text/javascript'>
+var nego = '4 dollars';
+
+function checkScope(){
+	var nego = "2 dollars that's double, double!"
+	console.log(nego);
+}
+
+console.log(nego);	// 4$
+checkScope();	// 2$
+
+</script>
+
+<script type = 'text/javascript'>
+
+var name = 'simyoung';
+
+function checkScope(){
+	name = 'kimduhan';
+	name2 = 'migunyangban';
+}
+checkScope();
+console.log(name);	// kimduhan
+console.log(name2);
+
+</script>
+
+<script type = 'text/javascript'>
+var name = 'simyoung';
+
+function checkScope(){
+	var name = 'kimduhan';
+	var name2 = 'migunyangban';
+}
+checkScope();
+console.log(name);	//simyoung
+console.log(name2);
+
+
+// 'var'의 차이 : 지역변수 설정값
+// var을 쓰지 않으면 전역변수로서 설정됨
+// function 내부에서는 var(지역변수)설정으로 정리해주어야 혼선이 억제됨 (내부에서 전역변수 설정하면 골아파짐)
+
+
+</script>
+
+
+</html>

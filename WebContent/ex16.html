@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript</h1>
+<h2>배열 + 객체 => 리스트</h2>
+</body>
+<script type = 'text/javascript'>
+
+var personList = [];
+
+var personVo = {
+	name: '의사양반',
+	hp: '010-2987-3981'
+};
+
+var personVo2 = [];
+personVo2.name = '형사양반';
+personVo2.hp = '010-9749-9371';
+
+var personVo3 = {
+	name: '미군동무'
+};
+personVo3.hp = '010-3987-1727';
+
+console.log(personVo);
+console.log(personVo2);
+console.log(personVo3);
+
+personList[0] = personVo;
+personList[1] = personVo2;
+personList.push(personVo3)
+
+console.log(personList);
+
+for(var i=0; i<personList.length; i++){
+	console.log(personList[i].name),
+	console.log(personList[i].hp)
+}
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>

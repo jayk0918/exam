@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>javascript</h1>
+<h2>function</h2>
+</body>
+<script type = 'text/javascript'>
+	testA();
+	function testA(){
+		console.log("testA");
+	}
+	// 기명함수(선언적 함수)
+	// testA()를 먼저 실행커맨드를 넣고 후에 정의하더라도 실행됨
+	// html이 해석될 때는 2번 순환하여 해석함 (1차에서 function 정의 우선조사, 2차에서 실행여부 조사)
+	
+</script>
+
+
+<script type = 'text/javascript'>
+	
+	function testA(){
+		console.log("testA");
+	}
+	// testA = console.log("testB"); -> 이 식을 대입하는 순간 testA는 함수가 아니게 됨
+	testA(); // 실행
+</script>
+
+<script type = 'text/javascript'>
+	// 익명함수 -> 실제로 이름이 없으면 사용 불가능 (즉시 & 1회성 함수사용)
+	var testB = function(){
+		console.log("testB");
+	}
+	testB();
+	// 사전에 정의되지 않은 익명함수는 선 사용 / 후 정의가 불가능함
+</script>
+
+
+</html>
