@@ -11,35 +11,35 @@
 <table border = '1'>
 
 <tr>
-	<td colspan = '4'><input type = 'text' value = ''></td>
+	<td colspan = '4'><input id = 'display' type = 'text'></td>
 </tr>
 
 <tr>
-	<td><button type = 'button' value = '9'>9</button></td>
-	<td><button type = 'button' value = '8'>8</button></td>
-	<td><button type = 'button' value = '7'>7</button></td>
-	<td><button type = 'button' value = ''>÷</button></td>
+	<td><button id = 'nine' type = 'button' value = '9'>9</button></td>
+	<td><button id = 'eight' type = 'button' value = '8'>8</button></td>
+	<td><button id = 'seven' type = 'button' value = '7'>7</button></td>
+	<td><button id = 'divide' type = 'button' value = ''>÷</button></td>
 </tr>
 
 <tr>
-	<td><button type = 'button' value = '6'>6</button></td>
-	<td><button type = 'button' value = '5'>5</button></td>
-	<td><button type = 'button' value = '4'>4</button></td>
-	<td><button type = 'button' value = '7'>X</button></td>
+	<td><button id = 'six' type = 'button' value = '6'>6</button></td>
+	<td><button id = 'five' type = 'button' value = '5'>5</button></td>
+	<td><button id = 'four' type = 'button' value = '4'>4</button></td>
+	<td><button id = 'multiply' type = 'button' value = ''>X</button></td>
 </tr>
 
 <tr>
-	<td><button type = 'button' value = '3'>3</button></td>
-	<td><button type = 'button' value = '2'>2</button></td>
-	<td><button type = 'button' value = '1'>1</button></td>
-	<td><button type = 'button' value = '7'>-</button></td>
+	<td><button id = 'three' type = 'button' value = '3'>3</button></td>
+	<td><button id = 'two' type = 'button' value = '2'>2</button></td>
+	<td><button id = 'one' type = 'button' value = '1'>1</button></td>
+	<td><button id = 'minus' type = 'button' value = ''>-</button></td>
 </tr>
 
 <tr>
-	<td><button type = 'button' value = '0'>0</button></td>
-	<td><button type = 'button' value = ''>C</button></td>
-	<td><button type = 'button' value = ''>=</button></td>
-	<td><button type = 'button' value = ''>+</button></td>
+	<td><button id = 'zero' type = 'button' value = '0'>0</button></td>
+	<td><button id = 'clear' type = 'button' value = ''>C</button></td>
+	<td><button id = 'calculate' type = 'button' value = ''>=</button></td>
+	<td><button id = 'plus' type = 'button' value = ''>+</button></td>
 </tr>
 
 </table>
@@ -47,6 +47,70 @@
 
 </body>
 <script type = 'text/javascript'>
+window.onload = function(){
+	
+	var display = document.getElementById('display');
+	
+	var zero = document.getElementById('zero');
+	var one = document.getElementById('one');
+	var two = document.getElementById('two');
+	var three = document.getElementById('three');
+	var four = document.getElementById('four');
+	var five = document.getElementById('five');
+	var six = document.getElementById('six');
+	var seven = document.getElementById('seven');
+	var eight = document.getElementById('eight');
+	var nine = document.getElementById('nine');
+	
+	var plus = document.getElementById('plus');
+	var minus = document.getElementById('minus');
+	var multiply = document.getElementById('multiply');
+	var divide = document.getElementById('divide');
+	
+	display.value = '0';
+	
+	zero.onclick = function(){
+		display.value = 0;
+	}
+	
+	one.onclick = function(){
+		display.value = 1;
+	}
+	
+	two.onclick = function(){
+		display.value = 2;
+	}
+	
+	three.onclick = function(){
+		display.value = 3;
+	}
+	
+	four.onclick = function(){
+		display.value = 4;
+	}
+	
+	five.onclick = function(){
+		display.value = 5;
+	}
+	
+	six.onclick = function(){
+		display.value = 6;
+	}
+	
+	seven.onclick = function(){
+		display.value = 7;
+	}
+	
+	eight.onclick = function(){
+		display.value = 8;
+	}
+	
+	nine.onclick = function(){
+		display.value = 9;
+	}
+	
+	
+}
 
 </script>
 
