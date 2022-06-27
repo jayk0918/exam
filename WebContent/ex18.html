@@ -8,15 +8,30 @@
 <h1>javascript</h1>
 <h2>이벤트(~할 때)</h2>
 
-<input id = num1 type = 'text' value = ''> + <input id = num2 type = 'text' value = ''>
+<input id = num1 class = 'bandong' type = 'text' value = ''> + <input id = num2 class = 'bandong' type = 'text' value = ''>
 <br>
 <p id = 'display'></p>
 
-<button id = 'btnPlus' type = 'button'>더하기</button>
+<button id = 'btnPlus' class = 'bandong' type = 'button'>더하기</button>
 
 </body>
 <script type = 'text/javascript'>
 window.onload = function(){
+	
+	var btn = document.getElementsByTagName('button');
+	console.log(btn);
+	
+	var inputs = document.getElementsByTagName('input');
+	console.log(inputs);
+	console.log(inputs[0]);
+	console.log(inputs[1]);
+	
+	var bandongs = document.getElementsByClassName('bandong');
+	console.log(bandongs);
+	console.log(bandongs[0]);
+	console.log(bandongs[1]);
+	console.log(bandongs[2]);
+	
 	
 	var btnPlus = document.getElementById('btnPlus');
 	var num1 = document.getElementById('num1');

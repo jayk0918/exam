@@ -66,21 +66,18 @@ window.onload = function(){
 	var minus = document.getElementById('minus');
 	var multiply = document.getElementById('multiply');
 	var divide = document.getElementById('divide');
+	var clear = document.getElementById('clear');
 	
 	var a;
 	var b;
 	var operator;
 	
+	var value;
 	
 	display.value = '0';
 	
 	zero.onclick = function(){
 		display.value = 0;
-		if(a == null){
-			a.value = 0;
-		}else if(operator != null){
-			b.value = 0;
-		}
 	}
 	
 	one.onclick = function(){
@@ -121,21 +118,29 @@ window.onload = function(){
 	
 	
 	plus.onclick = function(){
-		operator.value = plus;
+		display.value = '+';
+		operator.value = '+';
 	}
 	
 	minus.onclick = function(){
-		operator.value = minus;
+		display.value = '-';
+		operator.value = '-';
 	}
 	
 	multiply.onclick = function(){
-		operator.value = multiply;
+		display.value = 'X';
+		operator.value = 'X';
 	}
 	
 	divide.onclick = function(){
-		operator.value = divide;
+		display.value = '÷';
+		operator.value = '÷';
 	}
 	
+	clear.onclick = function(){
+		display.value = null;
+		operator.value = null;
+	}
 	
 	
 }
